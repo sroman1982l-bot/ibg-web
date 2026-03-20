@@ -6,6 +6,17 @@
   <title>Instituto de Bachillerato Grace</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+  <style>
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  background: white;
+}
+</style>
 <body class="bg-[#f8f7f2] text-slate-900">
 
   <header class="bg-[#083b53] text-white">
@@ -35,7 +46,7 @@
   <section class="max-w-6xl mx-auto px-6 py-20">
     <h3 class="text-3xl font-bold mb-10">Nuestros Programas</h3>
     <div class="grid gap-6 md:grid-cols-3">
-     <div class="rounded-2xl border p-6 transition transform hover:scale-105 hover:-translate-y-2 hover:shadow-2xl hover:bg-white">
+     <div class="rounded-2xl border p-6 card-hover">
         <h4 class="font-bold text-xl">Termina la Escuela (Programas MEP)</h4>
         <p class="mt-2 text-slate-600">Finaliza tu educación primaria con programas oficiales del MEP y acompañamiento personalizado.</p>
       </div>
