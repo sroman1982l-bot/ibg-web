@@ -1,252 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Instituto de Bachillerato Grace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-  <style>
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
 
-.fade-in-delay {
-  animation-delay: 0.3s;
-}
+<body class="bg-white text-gray-900">
 
-.fade-in-delay-2 {
-  animation-delay: 0.6s;
-}
+<!-- HERO -->
+<section class="relative min-h-screen text-white">
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
- <style>
-.card-hover {
-  background: white;
-  border: 1px solid #cfd8e3;
-  border-radius: 24px;
-  padding: 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
+  <div class="absolute inset-0 bg-cover bg-center"
+       style="background-image:url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1800&q=80')">
+  </div>
 
-.card-hover:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
-  border-color: #9fb3c8;
-}
+  <div class="absolute inset-0 bg-black/70"></div>
 
-.card-hover:active {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.16);
-}
-</style>
-</style>
-<body class="bg-[#f8f7f2] text-slate-900">
+  <div class="relative z-10 max-w-6xl mx-auto px-6 pt-32">
 
-  <header class="bg-[#083b53] text-white">
-    <div class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
-      <div>
-        <p class="text-sm uppercase tracking-[0.25em] text-[#f3b562]">Instituto de Bachillerato Grace</p>
-        <h1 class="text-2xl md:text-3xl font-bold">INSTITUTO DE BACHILLERATO GRACE</h1>
-      </div>
-      
-    </div>
-  </header>
+    <h1 class="text-5xl md:text-7xl font-black leading-tight drop-shadow-2xl">
+      Termina tus estudios este año. Nosotros te ayudamos.
+    </h1>
 
-  <section style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644'); background-size:cover; background-position:center;" class="text-white">
-  <div style="background:rgba(0,0,0,0.6); padding:80px 20px;">
-    <h2 class="fade-in">SUPÉRATE, EL TIEMPO ES AHORA</h2>
-    <p class="fade-in fade-in-delay">
-      Formación flexible en San José con horarios en mañana, tarde y noche.
+    <p class="mt-6 text-lg max-w-xl text-gray-200">
+      Programas flexibles, horarios accesibles y acompañamiento real.
     </p>
-  </div>
-</section>
-      </p>
-    </div>
-  </section>
 
-  <section class="max-w-6xl mx-auto px-6 py-20">
-    <h3 class="text-3xl font-bold mb-10">Nuestros Programas</h3>
-    <div class="grid gap-6 md:grid-cols-3">
-     <div class="card-hover">
-        <h4 class="font-bold text-xl">Termina la Escuela (Programas MEP)</h4>
-        <p class="mt-2 text-slate-600">Finaliza tu educación primaria con programas oficiales del MEP y acompañamiento personalizado.</p>
-      </div>
-     <div class="card-hover">
-        <h4 class="font-bold text-xl">Tercer Ciclo</h4>
-        <p class="mt-2 text-slate-600">7mo, 8vo y 9no con seguimiento académico constante y apoyo docente.</p>
-      </div>
-      <div class="card-hover">
-        <h4 class="font-bold text-xl">Bachillerato por Madurez</h4>
-        <p class="mt-2 text-slate-600">Obtén tu título con una modalidad flexible adaptada a tu ritmo.</p>
-      </div>
-      <div class="card-hover">
-        <h4 class="font-bold text-xl">Bachillerato por Edad</h4>
-        <p class="mt-2 text-slate-600">Continúa tus estudios con horarios accesibles y orientación constante.</p>
-      </div>
-      <div class="card-hover">
-        <h4 class="font-bold text-xl">Técnico en Computación</h4>
-        <p class="mt-2 text-slate-600">Desarrolla habilidades tecnológicas clave para el mundo laboral.</p>
-      </div>
-      <div class="card-hover">
-        <h4 class="font-bold text-xl">Preparación Exámenes de Admisión</h4>
-        <p class="mt-2 text-slate-600">Prepárate para UCR, TEC y UNA con acompañamiento académico.</p>
-      </div>
-      <div class="card-hover">
-        <h4 class="font-bold text-xl">Preparación Prueba Teórica COSEVI</h4>
-        <p class="mt-2 text-slate-600">Domina los contenidos necesarios para aprobar tu examen de licencia.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-slate-50">
-    <div class="max-w-6xl mx-auto px-6 py-20">
-      <h3 class="text-3xl font-bold">¿Por qué elegirnos?</h3>
-      <div class="grid gap-4 mt-8 md:grid-cols-2">
-        <div class="rounded-2xl bg-white p-5 shadow-sm border">Atención personalizada</div>
-        <div class="rounded-2xl bg-white p-5 shadow-sm border">Horarios flexibles: mañana, tarde y noche</div>
-        <div class="rounded-2xl bg-white p-5 shadow-sm border">Costos accesibles</div>
-        <div class="rounded-2xl bg-white p-5 shadow-sm border">Acompañamiento durante todo el proceso</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="max-w-6xl mx-auto px-6 py-20">
-    <h3 class="text-3xl font-bold">Preguntas Frecuentes</h3>
-    <div class="mt-8 space-y-4">
-      <div class="rounded-2xl border p-6">
-        <h4 class="font-bold">¿Qué programas ofrecen?</h4>
-        <p class="mt-2 text-slate-600">Ofrecemos programas oficiales del MEP, Tercer Ciclo, Bachillerato por Madurez, Bachillerato por Edad, Técnico en Computación y preparación para exámenes.</p>
-      </div>
-      <div class="rounded-2xl border p-6">
-        <h4 class="font-bold">¿Cuáles son los horarios?</h4>
-        <p class="mt-2 text-slate-600">Contamos con horarios en la mañana, tarde y noche, de lunes a sábado.</p>
-      </div>
-      <div class="rounded-2xl border p-6">
-        <h4 class="font-bold">¿Dónde están ubicados?</h4>
-        <p class="mt-2 text-slate-600">San José, Goicoechea, Mata de Plátano.</p>
-      </div>
-    </div>
-  </section>
-  <section style="padding:60px 20px; background:#f8fafc;">
-  <div style="max-width:1100px; margin:0 auto;">
-    <div style="text-align:center; margin-bottom:30px;">
-      <h3 style="font-size:32px; font-weight:800; color:#083b53; margin-bottom:10px;">
-        ¿Necesitas ayuda?
-      </h3>
-      <p style="font-size:18px; color:#475569; max-width:700px; margin:0 auto;">
-        Te orientamos sobre programas, horarios, matrícula y ubicación.
-      </p>
-    </div>
-
-    <div style="max-width:760px; margin:0 auto; background:white; border:1px solid #dbe4ee; border-radius:28px; box-shadow:0 15px 35px rgba(0,0,0,0.08); overflow:hidden;">
+    <div class="mt-8 flex gap-4 flex-wrap">
       
-      <div style="background:#083b53; color:white; padding:18px 22px; display:flex; align-items:center; gap:12px;">
-        <div style="width:42px; height:42px; border-radius:999px; background:#f3b562; color:#083b53; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:700;">
-          🤖
-        </div>
-        <div>
-          <div style="font-weight:800; font-size:18px;">Asistente IBG</div>
-          <div style="font-size:14px; opacity:0.9;">Respuestas rápidas sobre nuestros programas</div>
-        </div>
-      </div>
+      <a href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
+         target="_blank"
+         class="bg-blue-900 px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition">
+        🤖 Asistente IA
+      </a>
 
-      <div style="padding:24px;">
-        <div style="background:#f1f5f9; color:#0f172a; padding:16px 18px; border-radius:18px; max-width:85%; margin-bottom:18px; line-height:1.5;">
-          Hola 👋 Bienvenido al Instituto de Bachillerato Grace.  
-          ¿Sobre cuál tema te gustaría recibir información?
-        </div>
+      <a href="https://wa.me/50671025729?text=Hola%20quiero%20información%20del%20instituto"
+         target="_blank"
+         class="bg-green-500 px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition">
+        💬 WhatsApp
+      </a>
 
-        <div style="display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
-          
-          <a href="https://wa.me/50671025729?text=Hola,%20quiero%20información%20sobre%20Tercer%20Ciclo%20en%20IBG" target="_blank"
-             style="background:white; border:1px solid #d8e2ec; border-radius:18px; padding:16px; text-decoration:none; color:#0f172a; box-shadow:0 4px 12px rgba(0,0,0,0.04); transition:0.3s;">
-            📘 <strong>Tercer Ciclo</strong><br>
-            <span style="color:#64748b;">7mo, 8vo y 9no</span>
-          </a>
-
-          <a href="https://wa.me/50671025729?text=Hola,%20quiero%20información%20sobre%20Bachillerato%20por%20Madurez%20o%20Edad%20en%20IBG" target="_blank"
-             style="background:white; border:1px solid #d8e2ec; border-radius:18px; padding:16px; text-decoration:none; color:#0f172a; box-shadow:0 4px 12px rgba(0,0,0,0.04); transition:0.3s;">
-            🎓 <strong>Bachillerato</strong><br>
-            <span style="color:#64748b;">Madurez y Edad</span>
-          </a>
-
-          <a href="https://wa.me/50671025729?text=Hola,%20quiero%20información%20sobre%20Técnico%20en%20Computación%20en%20IBG" target="_blank"
-             style="background:white; border:1px solid #d8e2ec; border-radius:18px; padding:16px; text-decoration:none; color:#0f172a; box-shadow:0 4px 12px rgba(0,0,0,0.04); transition:0.3s;">
-            💻 <strong>Técnico</strong><br>
-            <span style="color:#64748b;">Computación</span>
-          </a>
-
-          <a href="https://wa.me/50671025729?text=Hola,%20quiero%20información%20sobre%20preparación%20para%20exámenes%20de%20admisión%20en%20IBG" target="_blank"
-             style="background:white; border:1px solid #d8e2ec; border-radius:18px; padding:16px; text-decoration:none; color:#0f172a; box-shadow:0 4px 12px rgba(0,0,0,0.04); transition:0.3s;">
-            📝 <strong>Admisión</strong><br>
-            <span style="color:#64748b;">UCR, TEC y UNA</span>
-          </a>
-
-          <a href="https://wa.me/50671025729?text=Hola,%20quiero%20información%20sobre%20la%20prueba%20teórica%20COSEVI%20en%20IBG" target="_blank"
-             style="background:white; border:1px solid #d8e2ec; border-radius:18px; padding:16px; text-decoration:none; color:#0f172a; box-shadow:0 4px 12px rgba(0,0,0,0.04); transition:0.3s;">
-            🚗 <strong>COSEVI</strong><br>
-            <span style="color:#64748b;">Prueba teórica</span>
-          </a>
-
-          <a href="https://wa.me/50671025729?text=Hola,%20quiero%20información%20sobre%20cómo%20terminar%20la%20escuela%20con%20programas%20MEP%20en%20IBG" target="_blank"
-             style="background:white; border:1px solid #d8e2ec; border-radius:18px; padding:16px; text-decoration:none; color:#0f172a; box-shadow:0 4px 12px rgba(0,0,0,0.04); transition:0.3s;">
-            🏫 <strong>Escuela</strong><br>
-            <span style="color:#64748b;">Programas MEP</span>
-          </a>
-        </div>
-
-        <div style="margin-top:24px; display:flex; flex-wrap:wrap; gap:12px;">
-          <a href="https://wa.me/50671025729?text=Hola,%20quiero%20información%20general%20del%20Instituto%20de%20Bachillerato%20Grace" target="_blank"
-             style="background:#25D366; color:white; padding:14px 18px; border-radius:999px; text-decoration:none; font-weight:700; box-shadow:0 6px 16px rgba(37,211,102,0.35);">
-            💬 Hablar por WhatsApp
-          </a>
-
-          <a href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg" target="_blank"
-             style="background:#083b53; color:white; padding:14px 18px; border-radius:999px; text-decoration:none; font-weight:700; box-shadow:0 6px 16px rgba(8,59,83,0.28);">
-            🤖 Abrir Asistente IA
-          </a>
-        </div>
-
-        <p style="margin-top:18px; color:#64748b; font-size:14px; line-height:1.5;">
-          También puedes usar nuestro asistente inteligente para recibir respuestas inmediatas sobre programas, horarios y ubicación.
-        </p>
-      </div>
     </div>
+
   </div>
 </section>
 
-  <footer id="contacto" class="bg-[#083b53] text-white">
-    <div class="max-w-6xl mx-auto px-6 py-12">
-      <h4 class="text-2xl font-bold">Contacto</h4>
-      <p class="mt-3">Correo: institutodebachilleratograce@gmail.com</p>
-      <p>Ubicación: San José, Goicoechea, Mata de Plátano</p>
-      <p>Horarios: Mañana, tarde y noche (Lunes a Sábado)</p>
+<!-- PROGRAMAS -->
+<section class="py-20 max-w-6xl mx-auto px-6">
+
+  <h2 class="text-4xl font-black text-blue-900 mb-10">
+    Programas
+  </h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- TARJETA -->
+    <a href="https://wa.me/50671025729?text=Tercer ciclo info" target="_blank">
+      <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
+             class="absolute w-full h-full object-cover brightness-90 hover:scale-110 transition duration-500">
+
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-2xl font-bold">Tercer Ciclo</h3>
+        </div>
+
+      </div>
+    </a>
+
+    <a href="https://wa.me/50671025729?text=Bachillerato info" target="_blank">
+      <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+             class="absolute w-full h-full object-cover brightness-90 hover:scale-110 transition duration-500">
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-2xl font-bold">Bachillerato</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://wa.me/50671025729?text=Técnico info" target="_blank">
+      <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+             class="absolute w-full h-full object-cover brightness-90 hover:scale-110 transition duration-500">
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-2xl font-bold">Técnico en Computación</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://wa.me/50671025729?text=Admisión info" target="_blank">
+      <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173"
+             class="absolute w-full h-full object-cover brightness-90 hover:scale-110 transition duration-500">
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-2xl font-bold">Admisión UCR TEC UNA</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://wa.me/50671025729?text=COSEVI info" target="_blank">
+      <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+             class="absolute w-full h-full object-cover brightness-90 hover:scale-110 transition duration-500">
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-2xl font-bold">COSEVI</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://wa.me/50671025729?text=Escuela info" target="_blank">
+      <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+             class="absolute w-full h-full object-cover brightness-90 hover:scale-110 transition duration-500">
+        <div class="absolute bottom-0 p-6 text-white">
+          <h3 class="text-2xl font-bold">Termina la Escuela</h3>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+</section>
+
+<!-- ASISTENTE -->
+<section class="relative py-20 text-white">
+
+  <div class="absolute inset-0 bg-cover bg-center"
+       style="background-image:url('https://images.unsplash.com/photo-1498243691581-b145c3f54a5a')">
+  </div>
+
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6">
+
+    <h2 class="text-4xl font-black">
+      ¿No sabes por dónde empezar?
+    </h2>
+
+    <p class="mt-4 text-lg text-gray-200">
+      Te guiamos paso a paso para que tomes la mejor decisión.
+    </p>
+
+    <div class="mt-8 flex gap-4 flex-wrap">
+
+      <a href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
+         target="_blank"
+         class="bg-blue-900 px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition">
+        🤖 Asistente IA
+      </a>
+
+      <a href="https://wa.me/50671025729?text=Hola quiero ayuda"
+         target="_blank"
+         class="bg-green-500 px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition">
+        💬 WhatsApp
+      </a>
+
     </div>
-  </footer>
-  <!-- Botón flotante Asistente IA -->
-<a href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg" target="_blank" 
-   style="position:fixed; bottom:85px; right:20px; background:#083b53; color:white; padding:15px 18px; border-radius:50px; font-weight:bold; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
-   🤖 Asistente IA
-</a>
-</footer>
 
-<a href="https://wa.me/50671025729?text=Hola%20quiero%20información..." target="_blank"
-style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:18px 22px; border-radius:50px; font-weight:bold; text-decoration:none; box-shadow:0 0 15px rgba(37,211,102,0.8); animation: pulse 1.5s infinite;">
-💬 WhatsApp
-</a>
-</a>
+  </div>
+</section>
+
+<!-- BOTONES FLOTANTES -->
+<a href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
+   target="_blank"
+   class="fixed bottom-28 right-6 bg-blue-900 text-white px-6 py-5 rounded-full font-bold shadow-xl">
+  🤖 IA
 </a>
 
-</body>
-</html>
+<a href="https://wa.me/50671025729"
+   target="_blank"
+   class="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-5 rounded-full font-bold shadow-xl">
+  💬
+</a>
+
 </body>
 </html>
