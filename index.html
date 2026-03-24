@@ -57,6 +57,45 @@
     </div>
   </a>
 </div>
+  <!-- AVATAR IBG PRO -->
+<div id="avatarIBG" class="fixed bottom-6 right-6 z-50 flex items-end gap-3">
+
+  <!-- MENSAJE -->
+  <div id="mensajeAvatar"
+       class="bg-white text-[#083b53] px-4 py-2 rounded-xl shadow-lg text-sm max-w-[230px] transition-all duration-500">
+    ¿Quieres terminar tus estudios este año? 👇
+  </div>
+
+  <!-- AVATAR -->
+  <div onclick="abrirAsistente()"
+       class="w-20 h-20 rounded-full overflow-hidden shadow-2xl border-4 border-white hover:scale-110 transition duration-300 cursor-pointer">
+
+    <img src="./avatar.png"
+         alt="Asesor IBG"
+         class="w-full h-full object-cover">
+
+  </div>
+<script>
+  const mensajes = [
+    "¿Quieres terminar el colegio este año? 🎓",
+    "Te ayudo a elegir el mejor programa 👇",
+    "Tenemos +90% de aprobación 📈",
+    "Escríbeme y empezamos hoy mismo 🚀"
+  ];
+
+  let i = 0;
+
+  setInterval(() => {
+    i = (i + 1) % mensajes.length;
+    document.getElementById("mensajeAvatar").innerText = mensajes[i];
+  }, 4000);
+</script>
+</div>
+  <script>
+  function abrirAsistente() {
+    window.open("https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg", "_blank");
+  }
+</script>
 <body class="bg-white text-gray-900">
 
   <!-- HEADER -->
