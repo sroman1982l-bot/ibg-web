@@ -5,13 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Instituto de Bachillerato Grace</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.9s ease forwards;
+    }
+
+    .fade-up-delay-1 {
+      animation-delay: 0.2s;
+    }
+
+    .fade-up-delay-2 {
+      animation-delay: 0.4s;
+    }
+
+    .fade-up-delay-3 {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 
 <body class="bg-white text-gray-900">
 
   <!-- HEADER -->
   <header class="absolute top-0 left-0 w-full z-50">
-    <div class="flex items-center px-6 py-4 text-white backdrop-blur bg-black/30">
+    <div class="flex items-center justify-between px-6 py-4 text-white backdrop-blur bg-black/30">
       <div class="flex items-center gap-4">
         <img
           src="./logo.jpg"
@@ -28,11 +59,19 @@
           </p>
         </div>
       </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="#inicio" class="hover:text-yellow-400 transition">Inicio</a>
+        <a href="#programas" class="hover:text-yellow-400 transition">Programas</a>
+        <a href="#asistente" class="hover:text-yellow-400 transition">Asistente</a>
+        <a href="#testimonios" class="hover:text-yellow-400 transition">Testimonios</a>
+        <a href="#contacto" class="hover:text-yellow-400 transition">Contacto</a>
+      </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="relative min-h-screen text-white">
+  <section id="inicio" class="relative min-h-screen text-white">
     <div
       class="absolute inset-0 bg-cover bg-center"
       style="background-image:url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1800&q=80');"
@@ -41,15 +80,15 @@
     <div class="absolute inset-0 bg-black/70"></div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-6 pt-36 md:pt-44 pb-16">
-      <h1 class="text-5xl md:text-7xl font-black leading-tight drop-shadow-2xl max-w-4xl">
+      <h1 class="text-5xl md:text-7xl font-black leading-tight drop-shadow-2xl max-w-4xl fade-up">
         Termina tus estudios este año. Nosotros te ayudamos.
       </h1>
 
-      <p class="mt-6 text-lg md:text-xl max-w-2xl text-gray-200">
+      <p class="mt-6 text-lg md:text-xl max-w-2xl text-gray-200 fade-up fade-up-delay-1">
         Programas flexibles, horarios accesibles y acompañamiento real.
       </p>
 
-      <div class="mt-8 flex gap-4 flex-wrap">
+      <div class="mt-8 flex gap-4 flex-wrap fade-up fade-up-delay-2">
         <a
           href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
           target="_blank"
@@ -72,15 +111,15 @@
   </section>
 
   <!-- PROGRAMAS -->
-  <section class="py-20 max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl md:text-5xl font-black text-[#083b53] mb-10">
+  <section id="programas" class="py-20 max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black text-[#083b53] mb-10 fade-up">
       Programas
     </h2>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <a href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Tercer%20Ciclo" target="_blank" rel="noreferrer">
-        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group">
+        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group fade-up">
           <img
             src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80"
             alt="Tercer Ciclo"
@@ -95,7 +134,7 @@
       </a>
 
       <a href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Bachillerato" target="_blank" rel="noreferrer">
-        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group">
+        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group fade-up fade-up-delay-1">
           <img
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
             alt="Bachillerato"
@@ -110,7 +149,7 @@
       </a>
 
       <a href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20T%C3%A9cnico%20en%20Computaci%C3%B3n" target="_blank" rel="noreferrer">
-        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group">
+        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group fade-up fade-up-delay-2">
           <img
             src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
             alt="Técnico en Computación"
@@ -125,7 +164,7 @@
       </a>
 
       <a href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Preparaci%C3%B3n%20para%20Ex%C3%A1menes%20de%20Admisi%C3%B3n" target="_blank" rel="noreferrer">
-        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group">
+        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group fade-up">
           <img
             src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80"
             alt="Exámenes de Admisión"
@@ -140,7 +179,7 @@
       </a>
 
       <a href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Prueba%20Te%C3%B3rica%20COSEVI" target="_blank" rel="noreferrer">
-        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group">
+        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group fade-up fade-up-delay-1">
           <img
             src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
             alt="COSEVI"
@@ -155,7 +194,7 @@
       </a>
 
       <a href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Termina%20la%20Escuela" target="_blank" rel="noreferrer">
-        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group">
+        <div class="relative h-80 rounded-3xl overflow-hidden shadow-xl cursor-pointer group fade-up fade-up-delay-2">
           <img
             src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80"
             alt="Termina la Escuela"
@@ -173,7 +212,7 @@
   </section>
 
   <!-- ASISTENTE -->
-  <section class="relative py-24 text-white">
+  <section id="asistente" class="relative py-24 text-white">
     <div
       class="absolute inset-0 bg-cover bg-center"
       style="background-image:url('https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=1800&q=80');"
@@ -182,15 +221,15 @@
     <div class="absolute inset-0 bg-black/70"></div>
 
     <div class="relative z-10 max-w-5xl mx-auto px-6">
-      <h2 class="text-4xl md:text-5xl font-black">
+      <h2 class="text-4xl md:text-5xl font-black fade-up">
         ¿No sabes por dónde empezar?
       </h2>
 
-      <p class="mt-4 text-lg text-gray-200 max-w-2xl">
+      <p class="mt-4 text-lg text-gray-200 max-w-2xl fade-up fade-up-delay-1">
         Te guiamos paso a paso para que tomes la mejor decisión.
       </p>
 
-      <div class="mt-8 flex gap-4 flex-wrap">
+      <div class="mt-8 flex gap-4 flex-wrap fade-up fade-up-delay-2">
         <a
           href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
           target="_blank"
@@ -212,8 +251,73 @@
     </div>
   </section>
 
+  <!-- TESTIMONIOS CON VIDEO -->
+  <section id="testimonios" class="relative py-24 text-white">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="https://cdn.coverr.co/videos/coverr-students-walking-on-campus-9716/1080p.mp4" type="video/mp4">
+    </video>
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-6 fade-up">
+        Historias reales, resultados reales
+      </h2>
+
+      <p class="text-lg text-gray-200 max-w-2xl mx-auto fade-up fade-up-delay-1">
+        Estudiantes que decidieron cambiar su vida y hoy están más cerca de sus metas.
+      </p>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-6 fade-up">
+          <p class="text-white text-lg">
+            “Pensé que ya era tarde para estudiar… IBG me demostró que no.”
+          </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-6 fade-up fade-up-delay-1">
+          <p class="text-white text-lg">
+            “Pasé el bachillerato y ahora voy por más.”
+          </p>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur rounded-3xl p-6 fade-up fade-up-delay-2">
+          <p class="text-white text-lg">
+            “El acompañamiento fue lo que marcó la diferencia.”
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-12 flex justify-center gap-4 flex-wrap fade-up fade-up-delay-3">
+        <a
+          href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
+          target="_blank"
+          rel="noreferrer"
+          class="bg-[#083b53] px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition"
+        >
+          🤖 Hablar con Asistente
+        </a>
+
+        <a
+          href="https://wa.me/50671025729?text=Hola%20quiero%20matricularme"
+          target="_blank"
+          rel="noreferrer"
+          class="bg-green-500 px-6 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition"
+        >
+          💬 Matrícula por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
-  <footer class="bg-[#083b53] text-white py-12">
+  <footer id="contacto" class="bg-[#083b53] text-white py-12">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
       <div>
         <h3 class="text-xl font-bold text-yellow-400">Instituto de Bachillerato Grace</h3>
