@@ -37,6 +37,129 @@
     }
   </style>
 </head>
+  <!-- AVATAR IBG COMPLETO -->
+<style>
+  @keyframes respirarAvatar {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+  }
+
+  @keyframes flotarBurbuja {
+    0%, 100% { transform: translateY(0); opacity: 0; }
+    10%, 80% { transform: translateY(-6px); opacity: 1; }
+  }
+
+  #avatarBtn {
+    animation: respirarAvatar 2.8s ease-in-out infinite;
+  }
+
+  .avatar-bubble-show {
+    animation: flotarBurbuja 4s ease-in-out forwards;
+  }
+</style>
+
+<div id="avatarWrap" class="fixed bottom-6 right-6 z-50 hidden">
+  <!-- BURBUJA -->
+  <div
+    id="avatarBubble"
+    class="absolute bottom-24 right-0 bg-white text-[#083b53] px-4 py-3 rounded-2xl shadow-xl text-sm max-w-[250px] leading-5 opacity-0"
+  >
+    ¿Quieres terminar tus estudios este año? 🎓
+    <div class="absolute bottom-[-8px] right-6 w-4 h-4 bg-white rotate-45"></div>
+  </div>
+
+  <!-- MENÚ -->
+  <div id="avatarMenu" class="hidden absolute bottom-24 right-0 flex-col gap-2 mb-2">
+    <a
+      href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
+      target="_blank"
+      rel="noreferrer"
+      class="bg-[#083b53] text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition text-sm font-semibold"
+    >
+      🤖 Asistente IA
+    </a>
+
+    <a
+      href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20del%20instituto"
+      target="_blank"
+      rel="noreferrer"
+      class="bg-green-500 text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition text-sm font-semibold"
+    >
+      💬 WhatsApp
+    </a>
+
+    <a
+      href="#programas"
+      class="bg-yellow-400 text-[#083b53] px-4 py-2 rounded-full shadow-lg hover:scale-105 transition text-sm font-semibold"
+    >
+      🎓 Ver programas
+    </a>
+  </div>
+
+  <!-- AVATAR -->
+  <div
+    id="avatarBtn"
+    class="w-20 h-20 rounded-full overflow-hidden shadow-2xl border-4 border-white cursor-pointer hover:scale-110 transition bg-white"
+  >
+    <img
+      src="./avatar.png"
+      alt="Asesor IBG"
+      class="w-full h-full object-cover"
+    />
+  </div>
+</div>
+
+<script>
+  const avatarWrap = document.getElementById("avatarWrap");
+  const avatarBubble = document.getElementById("avatarBubble");
+  const avatarMenu = document.getElementById("avatarMenu");
+  const avatarBtn = document.getElementById("avatarBtn");
+
+  const mensajesAvatar = [
+    "¿Quieres terminar tus estudios este año? 🎓",
+    "Te ayudo a elegir el mejor programa 👇",
+    "Tenemos más del 90% de aprobación 📈",
+    "Haz clic y te guío paso a paso 🚀"
+  ];
+
+  let avatarIndex = 0;
+
+  function mostrarBurbuja() {
+    avatarBubble.innerHTML =
+      mensajesAvatar[avatarIndex] +
+      '<div class="absolute bottom-[-8px] right-6 w-4 h-4 bg-white rotate-45"></div>';
+
+    avatarBubble.classList.remove("avatar-bubble-show");
+    void avatarBubble.offsetWidth; // reinicia animación
+    avatarBubble.classList.add("avatar-bubble-show");
+  }
+
+  // Aparece a los 2 segundos
+  setTimeout(() => {
+    avatarWrap.classList.remove("hidden");
+    mostrarBurbuja();
+  }, 2000);
+
+  // Cambia mensaje y vuelve a mostrar burbuja cada 5 segundos
+  setInterval(() => {
+    avatarIndex = (avatarIndex + 1) % mensajesAvatar.length;
+    mostrarBurbuja();
+  }, 5000);
+
+  // Abrir/cerrar menú
+  avatarBtn.addEventListener("click", () => {
+    avatarMenu.classList.toggle("hidden");
+    avatarMenu.classList.toggle("flex");
+  });
+
+  // Cerrar menú al tocar fuera
+  document.addEventListener("click", (e) => {
+    if (!avatarWrap.contains(e.target)) {
+      avatarMenu.classList.add("hidden");
+      avatarMenu.classList.remove("flex");
+    }
+  });
+</script>
 
 
 </script>
