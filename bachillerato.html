@@ -1,74 +1,194 @@
-<div class="mt-12 grid md:grid-cols-2 gap-8">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bachillerato | IBG</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
 
-  <!-- COSTOS -->
-  <div class="bg-[#f8f6f1] p-6 rounded-2xl shadow">
-    <h4 class="text-xl font-bold text-[#083b53] mb-4">Costos</h4>
+<body class="bg-white text-gray-900">
 
-    <ul class="space-y-3 text-gray-700">
-      <li><strong>Matrícula única:</strong> ₡15.000</li>
-      <li><strong>Costo mensual por materia:</strong> ₡15.000</li>
-      <li><strong>Matemáticas:</strong> ₡20.000</li>
-    </ul>
+  <!-- HEADER -->
+  <header class="bg-[#083b53] text-white px-6 py-4 flex items-center gap-4">
+    <img src="./logo.jpg" alt="Logo IBG" class="h-12 w-12 rounded-full bg-white p-1 object-contain" />
+    <div>
+      <h1 class="text-sm font-bold tracking-wide uppercase">Instituto de Bachillerato Grace</h1>
+      <p class="text-yellow-400 text-xs font-semibold">Supérate, el tiempo es ahora</p>
+    </div>
+  </header>
 
-    <p class="mt-4 text-gray-600 leading-7">
-      Hemos diseñado una estructura accesible que te permite avanzar a tu ritmo hacia tu título.
+  <!-- HERO -->
+  <section class="relative h-[60vh] flex items-center text-white">
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1800&q=80');"
+    ></div>
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 px-6 max-w-4xl mx-auto w-full">
+      <h2 class="text-5xl md:text-6xl font-black">Bachillerato</h2>
+      <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl">
+        Una ruta real para obtener tu título y seguir avanzando hacia tus metas.
+      </p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold text-[#083b53] mb-6">
+      ¿Qué es Bachillerato?
+    </h3>
+
+    <p class="text-lg text-gray-700 leading-8">
+      El Bachillerato es la etapa que te permite culminar tu proceso académico y acercarte a nuevas oportunidades de estudio, trabajo y crecimiento personal. En IBG te acompañamos con una preparación enfocada, flexible y pensada para que puedas avanzar según tu realidad.
     </p>
-  </div>
 
-  <!-- HORARIOS -->
-  <div class="bg-[#f8f6f1] p-6 rounded-2xl shadow">
-    <h4 class="text-xl font-bold text-[#083b53] mb-4">Horarios</h4>
+    <div class="mt-12 grid md:grid-cols-2 gap-8">
 
-    <p class="text-gray-700 leading-7">
-      Disponemos de horarios en la <strong>mañana, tarde y noche</strong>, ajustados a tus necesidades.
+      <!-- MADUREZ -->
+      <div class="bg-[#f8f6f1] p-6 rounded-2xl shadow">
+        <h4 class="text-2xl font-bold text-[#083b53] mb-4">Bachillerato por Madurez</h4>
+        <p class="text-gray-700 leading-7">
+          Está dirigido a personas jóvenes y adultas que desean obtener su título de bachillerato mediante una modalidad flexible, con enfoque en preparación por asignaturas y acompañamiento constante.
+        </p>
+        <ul class="mt-4 space-y-2 text-gray-700">
+          <li>✔ Ideal para quienes estudian y trabajan</li>
+          <li>✔ Modalidad flexible</li>
+          <li>✔ Preparación enfocada en resultados</li>
+          <li>✔ Ruta clara hacia tu título</li>
+        </ul>
+      </div>
+
+      <!-- EDAD -->
+      <div class="bg-[#f8f6f1] p-6 rounded-2xl shadow">
+        <h4 class="text-2xl font-bold text-[#083b53] mb-4">Bachillerato por Edad</h4>
+        <p class="text-gray-700 leading-7">
+          Pensado para estudiantes que desean continuar su proceso académico en una estructura más acompañada, con horarios accesibles y orientación para avanzar con seguridad hacia la obtención de su título.
+        </p>
+        <ul class="mt-4 space-y-2 text-gray-700">
+          <li>✔ Seguimiento cercano</li>
+          <li>✔ Horarios accesibles</li>
+          <li>✔ Acompañamiento docente</li>
+          <li>✔ Preparación académica constante</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COSTOS Y HORARIOS -->
+  <section class="max-w-6xl mx-auto px-6 pb-16">
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- COSTOS -->
+      <div class="bg-[#f8f6f1] p-6 rounded-2xl shadow">
+        <h4 class="text-xl font-bold text-[#083b53] mb-4">Costos</h4>
+
+        <ul class="space-y-3 text-gray-700">
+          <li><strong>Matrícula única:</strong> ₡15.000</li>
+          <li><strong>Costo mensual por materia:</strong> ₡15.000</li>
+          <li><strong>Matemáticas:</strong> ₡20.000</li>
+        </ul>
+
+        <p class="mt-4 text-gray-600 leading-7">
+          En el caso de Matemáticas, el costo es mayor debido a que requiere más tiempo de acompañamiento por semana.
+        </p>
+      </div>
+
+      <!-- HORARIOS -->
+      <div class="bg-[#f8f6f1] p-6 rounded-2xl shadow">
+        <h4 class="text-xl font-bold text-[#083b53] mb-4">Horarios</h4>
+
+        <p class="text-gray-700 leading-7">
+          Contamos con horarios en la <strong>mañana, tarde y noche</strong>.
+        </p>
+
+        <p class="mt-3 text-gray-700 leading-7">
+          Para conocer los <strong>horarios detallados de este período</strong>, no dudes en contactarnos por
+          <strong>WhatsApp</strong> o por nuestro <strong>Asistente IA</strong>.
+        </p>
+
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a
+            href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Bachillerato"
+            target="_blank"
+            rel="noreferrer"
+            class="bg-green-500 text-white px-5 py-3 rounded-full font-bold shadow hover:scale-105 transition"
+          >
+            💬 WhatsApp
+          </a>
+
+          <a
+            href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
+            target="_blank"
+            rel="noreferrer"
+            class="bg-[#083b53] text-white px-5 py-3 rounded-full font-bold shadow hover:scale-105 transition"
+          >
+            🤖 Asistente IA
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="max-w-6xl mx-auto px-6 pb-16">
+    <div class="bg-[#083b53] text-white p-8 rounded-2xl shadow">
+      <h4 class="text-2xl font-bold mb-4">Resultados que respaldan nuestra calidad</h4>
+
+      <p class="text-lg leading-8">
+        En el Instituto de Bachillerato Grace contamos con un
+        <strong> porcentaje de aprobación superior al 90%</strong>,
+        gracias a nuestro acompañamiento, metodología y preparación enfocada en resultados reales.
+      </p>
+    </div>
+  </section>
+
+  <!-- BASE OFICIAL -->
+  <section class="max-w-6xl mx-auto px-6 pb-20">
+    <h4 class="text-2xl font-bold text-[#083b53] mb-4">Base oficial</h4>
+    <p class="text-gray-700 leading-8">
+      La información general de este programa se fundamenta en la estructura oficial publicada por el
+      <strong> Ministerio de Educación Pública (MEP)</strong>. En IBG tomamos esa base y la reforzamos con acompañamiento, organización y seguimiento académico.
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[#083b53] text-white py-16 text-center px-6">
+    <h3 class="text-3xl font-bold">
+      Da el siguiente paso hacia tu título
+    </h3>
+
+    <p class="mt-4 text-gray-200">
+      Estamos listos para orientarte y ayudarte a comenzar.
     </p>
 
-    <p class="mt-3 text-gray-700 leading-7">
-      Para conocer los <strong>horarios detallados</strong>, contáctanos por WhatsApp o nuestro Asistente IA.
-    </p>
-
-    <div class="mt-5 flex flex-wrap gap-3">
-
-      <a href="https://wa.me/50671025729?text=Hola%20quiero%20información%20sobre%20Bachillerato%20por%20Madurez"
-         target="_blank"
-         class="bg-green-500 text-white px-5 py-3 rounded-full font-bold shadow hover:scale-105 transition">
-        💬 WhatsApp
-      </a>
-
-      <a href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
-         target="_blank"
-         class="bg-[#083b53] text-white px-5 py-3 rounded-full font-bold shadow hover:scale-105 transition">
+    <div class="mt-8 flex justify-center gap-4 flex-wrap">
+      <a
+        href="https://chatgpt.com/g/g-69bd713f429081919ba79467ead0cccb-asistente-ibg"
+        target="_blank"
+        rel="noreferrer"
+        class="bg-yellow-400 text-[#083b53] px-6 py-4 rounded-full font-bold"
+      >
         🤖 Asistente IA
       </a>
 
+      <a
+        href="https://wa.me/50671025729?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Bachillerato"
+        target="_blank"
+        rel="noreferrer"
+        class="bg-green-500 text-white px-6 py-4 rounded-full font-bold"
+      >
+        💬 WhatsApp
+      </a>
     </div>
+  </section>
 
-  </div>
-
-</div>
-
-<!-- RESULTADOS -->
-<div class="mt-12 bg-[#083b53] text-white p-8 rounded-2xl shadow">
-
-  <h4 class="text-2xl font-bold mb-4">Resultados que respaldan nuestra calidad</h4>
-
-  <p class="text-lg leading-8">
-    En el Instituto de Bachillerato Grace contamos con un <strong>porcentaje de aprobación superior al 90%</strong>,
-    gracias a nuestro enfoque académico, acompañamiento constante y preparación orientada a resultados reales.
-  </p>
-
-</div>
-
-<!-- INFO MEP -->
-<div class="mt-10 text-gray-700 leading-8">
-
-  <p>
-    Este programa sigue los lineamientos establecidos por el
-    <strong>Ministerio de Educación Pública (MEP)</strong>.
-  </p>
-
-  <p class="mt-2">
-    Puedes consultar la información oficial directamente en la página del MEP.
-  </p>
-
-</div>
+</body>
+</html>
